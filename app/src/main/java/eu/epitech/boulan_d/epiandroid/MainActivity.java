@@ -136,7 +136,7 @@ public class MainActivity extends ActionBarActivity {
         mProfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent secondeActivite = new Intent(MainActivity.this, MainActivity.class);
+                Intent secondeActivite = new Intent(MainActivity.this, ProfilActivity.class);
                 //secondeActivite.putExtra(AGE, 31);
                 startActivityForResult(secondeActivite, 90);
             }

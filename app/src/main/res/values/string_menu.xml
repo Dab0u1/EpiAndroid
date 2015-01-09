@@ -12,12 +12,12 @@
     <!-- Menu slidable icon -->
     <array name="nav_icon_acceuil">
         <item>@drawable/ic_profil</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_module</item>
+        <item>@drawable/ic_planning</item>
         <item>@drawable/ic_elearning</item>
-        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_admin</item>
         <item>@drawable/ic_launcher</item>
     </array>
     <!-- Description menu icon-->
-    <string name="desc_nav_acceuil_icon">NavBar Icons</string>
+    <string name="desc_nav_acceuil_icon" translatable="false">NavBar Icons</string>
 </resources>
