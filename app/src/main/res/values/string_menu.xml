@@ -11,10 +11,10 @@
     </string-array>
     <!-- Menu slidable icon -->
     <array name="nav_icon_acceuil">
+        <item>@drawable/ic_profil</item>
         <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
-        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_elearning</item>
         <item>@drawable/ic_launcher</item>
         <item>@drawable/ic_launcher</item>
     </array>
