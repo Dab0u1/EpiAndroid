@@ -1,17 +1,31 @@
 package eu.epitech.boulan_d.epiandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class ProfilActivity extends ActionBarActivity {
+    private Intent intent = null;
+    private Button mBack = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
+        intent = new Intent(getApplicationContext(), MainActivity.class);
+        mBack = (Button) findViewById(R.id.back);
+        mBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
     }
 
 

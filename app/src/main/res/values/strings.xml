@@ -11,5 +11,6 @@
     <string name="elearning">e-learning</string>
     <string name="administration">Administration</string>
     <string name="title_activity_profil">Profil</string>
+    <string name="retour">Retour</string>
 
 </resources>
