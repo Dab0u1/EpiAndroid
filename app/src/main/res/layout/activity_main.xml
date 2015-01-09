@@ -15,10 +15,10 @@
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/background_floating_material_dark"
         android:choiceMode="singleChoice"
-        android:listSelector="@drawable/abc_list_selector_holo_light"
-        android:background="#FFF000"
-        android:dividerHeight="1dp" />
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/abc_list_selector_holo_light" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="AU REPAS CE JOUR :" />
+                android:text="@string/intra" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,12 +48,13 @@
                 android:layout_marginTop="10pt" />
 
             <Button
-                android:id="@+id/menu_entree"
+                android:id="@+id/profil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:width="50dp"
-                android:height="50dp" />
+                android:width="60dp"
+                android:height="50dp"
+                android:text="@string/profil" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,12 +63,13 @@
                 android:layout_marginTop="10pt" />
 
             <Button
-                android:id="@+id/menu_plat"
+                android:id="@+id/module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:width="50dp"
-                android:height="50dp" />
+                android:width="60dp"
+                android:height="50dp"
+                android:text="@string/modules" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,12 +78,13 @@
                 android:layout_marginTop="10pt" />
 
             <Button
-                android:id="@+id/menu_dess"
+                android:id="@+id/planning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:width="50dp"
-                android:height="50dp" />
+                android:width="60dp"
+                android:height="50dp"
+                android:text="@string/planning" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,88 +93,29 @@
                 android:layout_marginTop="10pt" />
 
             <Button
-                android:id="@+id/menu_boiss"
+                android:id="@+id/elearning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:width="50dp"
-                android:height="50dp" />
+                android:height="50dp"
+                android:text="@string/elearning" />
 
-            <ListView
-                android:id="@+id/listResEnt"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
+                android:layout_gravity="center"
                 android:layout_marginTop="10pt" />
 
-            <ListView
-                android:id="@+id/listResPlat"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_vertical"
-                android:textAlignment="center" />
-
-            <ListView
-                android:id="@+id/listResDess"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_gravity="fill_vertical" />
-
-            <ListView
-                android:id="@+id/listResBoiss"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_gravity="fill_vertical" />
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Prix :" />
-
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/listResPrice"
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:layout_marginRight="50px"
-                            android:gravity="right" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:gravity="right"
-                        android:text="€" />
-                </RelativeLayout>
-            </LinearLayout>
-
             <Button
-                android:id="@+id/butt_conf"
+                android:id="@+id/admin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center" />
+                android:width="50dp"
+                android:height="50dp"
+                android:text="@string/administration" />
 
-            <Button
-                android:id="@+id/reset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center" />
         </LinearLayout>
     </ScrollView>
 </android.support.v4.widget.DrawerLayout>

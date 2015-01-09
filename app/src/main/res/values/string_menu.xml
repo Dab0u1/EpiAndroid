@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Menu slidable -->
+    <string-array name="nav_bar_acceuil">
+        <item>Profil</item>
+        <item>Modules</item>
+        <item>Planning</item>
+        <item>E-learning</item>
+        <item>Administration</item>
+        <item>Aide</item>
+    </string-array>
+    <!-- Menu slidable icon -->
+    <array name="nav_icon_acceuil">
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+        <item>@drawable/ic_launcher</item>
+    </array>
+    <!-- Description menu icon-->
+    <string name="desc_nav_acceuil_icon">NavBar Icons</string>
+</resources>
