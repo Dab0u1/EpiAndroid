@@ -4,10 +4,10 @@ package eu.epitech.boulan_d.epiandroid.json;
  * Created by boulan_d on 12/01/2015.
  */
 public class Login {
-    private static int id;
+    private static String id;
     private static String login = null;
     private static String title = null;
-    private static String email = null;
+    private static String internal_email = null;
     private static String firstname = null;
     private static String lastname = null;
     private static String picture = null;
@@ -16,8 +16,8 @@ public class Login {
     private static int uid;
     private static int gid;
     private static String location = null;
-    private static int id_promo;
-    private static int id_history;
+    private static String id_promo;
+    private static String id_history;
     private static String course_code = null;
     private static String school_code = null;
     private static String school_title = null;
@@ -28,11 +28,20 @@ public class Login {
     private static boolean close = false;
     private static String close_reason = null;
 
-    public static int getId() {
+    public Login() {
+    }
+
+    public Login(String id, String firstname, String lastname) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
+    public static String getId() {
         return id;
     }
 
-    public static void setId(int id) {
+    public static void setId(String id) {
         Login.id = id;
     }
 
@@ -52,12 +61,12 @@ public class Login {
         Login.title = title;
     }
 
-    public static String getEmail() {
-        return email;
+    public static String getInternal_email() {
+        return internal_email;
     }
 
-    public static void setEmail(String email) {
-        Login.email = email;
+    public static void setInternal_email(String internal_email) {
+        Login.internal_email = internal_email;
     }
 
     public static String getFirstname() {
@@ -124,19 +133,19 @@ public class Login {
         Login.location = location;
     }
 
-    public static int getId_promo() {
+    public static String getId_promo() {
         return id_promo;
     }
 
-    public static void setId_promo(int id_promo) {
+    public static void setId_promo(String id_promo) {
         Login.id_promo = id_promo;
     }
 
-    public static int getId_history() {
+    public static String getId_history() {
         return id_history;
     }
 
-    public static void setId_history(int id_history) {
+    public static void setId_history(String id_history) {
         Login.id_history = id_history;
     }
 
@@ -214,7 +223,7 @@ public class Login {
 
     @Override
     public String toString() {
-        return "User [login=" + getId() + ", first name=" + getFirstname() + ", " +
-                "last name=" + getLastname() + "]";
+        return "Login [id=" + id + ", first name=" + firstname + ", " +
+                "last name=" + lastname + "]";
     }
 }
