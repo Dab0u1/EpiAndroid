@@ -31,12 +31,6 @@ public class Login {
     public Login() {
     }
 
-    public Login(String id, String firstname, String lastname) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-    }
-
     public static String getId() {
         return id;
     }
